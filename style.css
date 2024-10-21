@@ -1,0 +1,24 @@
+.section_all {
+    background-color: #88c1d0;
+    height: 200px;
+    margin: 10px;
+}
+
+body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+@media only screen and (min-width: 768px) and (max-width: 1599px){
+    body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 767px){
+    body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
